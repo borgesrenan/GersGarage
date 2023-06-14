@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Services</title>
+    <link rel="stylesheet" href="../css/services.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="#">Our Services</a>
+        <a href="contact.html">Contact us</a>
+    </div>
+
+    <script src="../services.js"></script>
+
+    <div class="content">
+        <h1>Our Services</h1>
+
+        <div class="service-block-container">
+            <!-- Annual Service Block -->
+            <div class="service-block">
+                <h2>Annual Service</h2>
+                <p>Description of Annual Service goes here.</p>
+                <button onclick="toggleDropdown('annual-service-dropdown')">What's Included</button>
+                <div class="dropdown-list" id="annual-service-dropdown">
+                    <ul>
+                        <li>Service 1</li>
+                        <li>Service 2</li>
+                        <li>Service 3</li>
+                        <!-- Add more services -->
+                    </ul>
+                </div>
+                <button onclick="location.href='appointments.html'">Book Now</button>
+            </div>
+
+            <!-- Major Service Block -->
+            <div class="service-block">
+                <h2>Major Service</h2>
+                <p>Description of Major Service goes here.</p>
+                <button onclick="toggleDropdown('major-service-dropdown')">What's Included</button>
+                <div class="dropdown-list" id="major-service-dropdown">
+                    <ul>
+                        <li>Service 1</li>
+                        <li>Service 2</li>
+                        <li>Service 3</li>
+                        <!-- Add more services -->
+                    </ul>
+                </div>
+                <button onclick="location.href='appointments.html'">Book Now</button>
+            </div>
+
+            <!-- Repair / Fault Block -->
+            <div class="service-block">
+                <h2>Repair / Fault</h2>
+                <p>Description of Repair / Fault service goes here.</p>
+                <button onclick="toggleDropdown('repair-fault-dropdown')">What's Included</button>
+                <div class="dropdown-list" id="repair-fault-dropdown">
+                    <ul>
+                        <li>Service 1</li>
+                        <li>Service 2</li>
+                        <li>Service 3</li>
+                        <!-- Add more services -->
+                    </ul>
+                </div>
+                <button onclick="location.href='appointments.html'">Book Now</button>
+            </div>
+
+            <!-- Major Repair Block -->
+            <div class="service-block">
+                <h2>Major Repair</h2>
+                <p>Description of Major Repair service goes here.</p>
+                <button onclick="toggleDropdown('major-repair-dropdown')">What's Included</button>
+                <div class="dropdown-list" id="major-repair-dropdown">
+                    <ul>
+                        <li>Service 1</li>
+                        <li>Service 2</li>
+                        <li>Service 3</li>
+                        <!-- Add more services -->
+                    </ul>
+                </div>
+                <button onclick="location.href='appointments.html'">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <!-- Add your footer content -->
+    </footer>
+</body>
+
+</html>

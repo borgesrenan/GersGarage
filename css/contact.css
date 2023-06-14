@@ -1,8 +1,14 @@
 /* Navbar */
-
 .navbar {
     background-color: #f1f1f1;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .navbar a {
@@ -25,15 +31,15 @@
     color: white;
 }
 
-/* body */
-
+/* Content */
 .content {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    max-width: 800px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: calc(100vh - 70px - 40px); /* Adjust the height based on your navbar and footer heights */
+    margin-bottom: 40px; /* Height of the footer */
 }
 
 h1, h2 {
@@ -41,7 +47,6 @@ h1, h2 {
 }
 
 /* Form */
-
 form {
     margin-top: 20px;
 }
@@ -83,20 +88,56 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Media queries for responsiveness */
+/* CSS for Footer */
+.footer {
+    background-color: #ebe9e9;
+    color: #000000;
+    padding: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.footer-logo img {
+    width: 200px;
+    max-height: 200px;
+}
+
+.footer-info {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-info p {
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
 @media screen and (max-width: 600px) {
     .content {
         padding: 10px;
     }
-    
+
     input[type="text"],
     input[type="email"],
     input[type="tel"],
     textarea {
         font-size: 14px;
     }
-    
+
     button[type="submit"] {
         font-size: 14px;
     }
